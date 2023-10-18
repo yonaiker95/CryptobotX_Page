@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = 'RENDER' not in os.environ
 
 ALLOWED_HOSTS = ['*']
 
@@ -130,7 +130,7 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 
 if DEBUG:
-  STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+  STATICFILES_DIRS = [os.path.join(BASE_DIR, 'home/static')]
 else:
   STATIC_ROOT = os.path.join(BASE_DIR, 'home/static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
