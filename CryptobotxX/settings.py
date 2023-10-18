@@ -56,7 +56,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'cryptobotx.urls'
+ROOT_URLCONF = 'CryptobotX.urls'
 
 TEMPLATES = [
     {
@@ -74,7 +74,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'cryptobotx.wsgi.application'
+WSGI_APPLICATION = 'CryptobotX.wsgi.application'
 
 
 # Database
