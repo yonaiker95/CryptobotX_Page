@@ -11,3 +11,6 @@ class PaymentHistory(models.Model):
 
     def __str__(self):
         return self.username+' - $'+self.monto+' - '+self.medio_de_pago+' - '+self.status
+
+    class Meta:
+        db_table = "PaymentHistory"

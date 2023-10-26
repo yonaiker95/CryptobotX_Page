@@ -75,6 +75,15 @@ WSGI_APPLICATION = 'CryptobotX.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'CryptobotX',
+#         "CLIENT": {
+#             "host": "mongodb://localhost:27017",
+#         }
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
